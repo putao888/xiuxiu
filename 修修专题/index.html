@@ -1,10 +1,10 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf8" />
 <title>zhuanti</title>
 <style type="text/css">
-/* ±êÇ©ÖØ¶¨Òå */
+/* æ ‡ç­¾é‡å®šä¹‰ */
 body{
 
 	padding:0;margin:0;background:#ddd url(images/bg.jpg) repeat;}
@@ -14,7 +14,7 @@ img{border:none;}
 a{text-decoration:none;color:#444;}
 a:hover{color:#999;}
 #title{width:600px;margin:20px auto;text-align:center;}
-/* ¶¨Òå¹Ø¼üÖ¡ */
+/* å®šä¹‰å…³é”®å¸§ */
 @-webkit-keyframes shade{
 	from{opacity:1;}
 	15%{opacity:0.4;}
@@ -58,51 +58,51 @@ a:hover{color:#999;}
 <script type="text/javascript" src="js/jquery.js"></script>
 <script type="text/javascript">
 window.onload = function(){
-	//ÔËĞĞÆÙ²¼Á÷Ö÷º¯Êı
+	//è¿è¡Œç€‘å¸ƒæµä¸»å‡½æ•°
 	PBL('wrap','box');
-	//Ä£ÄâÊı¾İ
+	//æ¨¡æ‹Ÿæ•°æ®
 	var data = [
-					{'src':'1.jpg','title':'Ô´ÂëÖ®¼Ò-mycodes.net'},
-					{'src':'2.jpg','title':'Ô´ÂëÖ®¼Ò-mycodes.net'},
-					{'src':'3.jpg','title':'Ô´ÂëÖ®¼Ò-mycodes.net'},
-					{'src':'4.jpg','title':'Ô´ÂëÖ®¼Ò-mycodes.net'},
-					{'src':'5.jpg','title':'Ô´ÂëÖ®¼Ò-mycodes.net'},
-					{'src':'6.jpg','title':'Ô´ÂëÖ®¼Ò-mycodes.net'},
-					{'src':'7.jpg','title':'Ô´ÂëÖ®¼Ò-mycodes.net'},
-					{'src':'8.jpg','title':'Ô´ÂëÖ®¼Ò-mycodes.net'},
-					{'src':'9.jpg','title':'Ô´ÂëÖ®¼Ò-mycodes.net'},
-					{'src':'10.jpg','title':'Ô´ÂëÖ®¼Ò-mycodes.net'}
+					{'src':'1.jpg','title':'æˆ‘æ¥ä¿®ä¿®'},
+					{'src':'2.jpg','title':'æˆ‘æ¥ä¿®ä¿®'},
+					{'src':'3.jpg','title':'æˆ‘æ¥ä¿®ä¿®'},
+					{'src':'4.jpg','title':'æˆ‘æ¥ä¿®ä¿®'},
+					{'src':'5.jpg','title':'æˆ‘æ¥ä¿®ä¿®'},
+					{'src':'6.jpg','title':'æˆ‘æ¥ä¿®ä¿®'},
+					{'src':'7.jpg','title':'æˆ‘æ¥ä¿®ä¿®'},
+					{'src':'8.jpg','title':'æˆ‘æ¥ä¿®ä¿®'},
+					{'src':'9.jpg','title':'æˆ‘æ¥ä¿®ä¿®'},
+					{'src':'10.jpg','title':'æˆ‘æ¥ä¿®ä¿®'}
 				];
 	
 	
-	//ÉèÖÃ¹ö¶¯¼ÓÔØ
+	//è®¾ç½®æ»šåŠ¨åŠ è½½
 	window.onscroll = function(){
-		//Ğ£ÑéÊı¾İÇëÇó
+		//æ ¡éªŒæ•°æ®è¯·æ±‚
 		if(getCheck()){
 			var wrap = document.getElementById('wrap');
 			for(i in data){
-				//´´½¨box
+				//åˆ›å»ºbox
 				var box = document.createElement('div');
 				box.className = 'box';
 				wrap.appendChild(box);
-				//´´½¨info
+				//åˆ›å»ºinfo
 				var info = document.createElement('div');
 				info.className = 'info';
 				box.appendChild(info);
-				//´´½¨pic
+				//åˆ›å»ºpic
 				var pic = document.createElement('div');
 				pic.className = 'pic';
 				info.appendChild(pic);
-				//´´½¨img
+				//åˆ›å»ºimg
 				var img = document.createElement('img');
 				img.src = 'images/'+data[i].src;
 				img.style.height = 'auto';
 				pic.appendChild(img);
-				//´´½¨title
+				//åˆ›å»ºtitle
 				var title = document.createElement('div');
 				title.className = 'title';
 				info.appendChild(title);
-				//´´½¨a±ê¼Ç
+				//åˆ›å»ºaæ ‡è®°
 				var a = document.createElement('a');
 				a.innerHTML = data[i].title;
 				title.appendChild(a);
@@ -112,35 +112,35 @@ window.onload = function(){
 	}
 }
 /**
-* ÆÙ²¼Á÷Ö÷º¯Êı
-* @param  wrap	[Str] Íâ²ãÔªËØµÄID
-* @param  box 	[Str] Ã¿Ò»¸öboxµÄÀàÃû
+* ç€‘å¸ƒæµä¸»å‡½æ•°
+* @param  wrap	[Str] å¤–å±‚å…ƒç´ çš„ID
+* @param  box 	[Str] æ¯ä¸€ä¸ªboxçš„ç±»å
 */
 function PBL(wrap,box){
-	//	1.»ñµÃÍâ²ãÒÔ¼°Ã¿Ò»¸öbox
+	//	1.è·å¾—å¤–å±‚ä»¥åŠæ¯ä¸€ä¸ªbox
 	var wrap = document.getElementById(wrap);
 	var boxs  = getClass(wrap,box);
-	//	2.»ñµÃÆÁÄ»¿ÉÏÔÊ¾µÄÁĞÊı
+	//	2.è·å¾—å±å¹•å¯æ˜¾ç¤ºçš„åˆ—æ•°
 	var boxW = boxs[0].offsetWidth;
 	var colsNum = Math.floor(document.documentElement.clientWidth/boxW);
-	wrap.style.width = boxW*colsNum+'px';//ÎªÍâ²ã¸³Öµ¿í¶È
-	//	3.Ñ­»·³öËùÓĞµÄbox²¢°´ÕÕÆÙ²¼Á÷ÅÅÁĞ
-	var everyH = [];//¶¨ÒåÒ»¸öÊı×é´æ´¢Ã¿Ò»ÁĞµÄ¸ß¶È
+	wrap.style.width = boxW*colsNum+'px';//ä¸ºå¤–å±‚èµ‹å€¼å®½åº¦
+	//	3.å¾ªç¯å‡ºæ‰€æœ‰çš„boxå¹¶æŒ‰ç…§ç€‘å¸ƒæµæ’åˆ—
+	var everyH = [];//å®šä¹‰ä¸€ä¸ªæ•°ç»„å­˜å‚¨æ¯ä¸€åˆ—çš„é«˜åº¦
 	for (var i = 0; i < boxs.length; i++) {
 		if(i<colsNum){
 			everyH[i] = boxs[i].offsetHeight;
 		}else{
-			var minH = Math.min.apply(null,everyH);//»ñµÃ×îĞ¡µÄÁĞµÄ¸ß¶È
-			var minIndex = getIndex(minH,everyH); //»ñµÃ×îĞ¡ÁĞµÄË÷Òı
+			var minH = Math.min.apply(null,everyH);//è·å¾—æœ€å°çš„åˆ—çš„é«˜åº¦
+			var minIndex = getIndex(minH,everyH); //è·å¾—æœ€å°åˆ—çš„ç´¢å¼•
 			getStyle(boxs[i],minH,boxs[minIndex].offsetLeft,i);
-			everyH[minIndex] += boxs[i].offsetHeight;//¸üĞÂ×îĞ¡ÁĞµÄ¸ß¶È
+			everyH[minIndex] += boxs[i].offsetHeight;//æ›´æ–°æœ€å°åˆ—çš„é«˜åº¦
 		}
 	}
 }
 /**
-* »ñÈ¡ÀàÔªËØ
-* @param  warp		[Obj] Íâ²ã
-* @param  className	[Str] ÀàÃû
+* è·å–ç±»å…ƒç´ 
+* @param  warp		[Obj] å¤–å±‚
+* @param  className	[Str] ç±»å
 */
 function getClass(wrap,className){
 	var obj = wrap.getElementsByTagName('*');
@@ -153,9 +153,9 @@ function getClass(wrap,className){
 	return arr;
 }
 /**
-* »ñÈ¡×îĞ¡ÁĞµÄË÷Òı
-* @param  minH	 [Num] ×îĞ¡¸ß¶È
-* @param  everyH [Arr] ËùÓĞÁĞ¸ß¶ÈµÄÊı×é
+* è·å–æœ€å°åˆ—çš„ç´¢å¼•
+* @param  minH	 [Num] æœ€å°é«˜åº¦
+* @param  everyH [Arr] æ‰€æœ‰åˆ—é«˜åº¦çš„æ•°ç»„
 */
 function getIndex(minH,everyH){
 	for(index in everyH){
@@ -163,7 +163,7 @@ function getIndex(minH,everyH){
 	}
 }
 /**
-* Êı¾İÇëÇó¼ìÑé
+* æ•°æ®è¯·æ±‚æ£€éªŒ
 */
 function getCheck(){
 	var documentH = document.documentElement.clientHeight;
@@ -171,7 +171,7 @@ function getCheck(){
 	return documentH+scrollH>=getLastH() ?true:false;
 }
 /**
-* »ñµÃ×îºóÒ»¸öboxËùÔÚÁĞµÄ¸ß¶È
+* è·å¾—æœ€åä¸€ä¸ªboxæ‰€åœ¨åˆ—çš„é«˜åº¦
 */
 function getLastH(){
 	var wrap = document.getElementById('wrap');
@@ -179,13 +179,13 @@ function getLastH(){
 	return boxs[boxs.length-1].offsetTop+boxs[boxs.length-1].offsetHeight;
 }
 /**
-* ÉèÖÃ¼ÓÔØÑùÊ½
-* @param  box 	[obj] ÉèÖÃµÄBox
-* @param  top 	[Num] boxµÄtopÖµ
-* @param  left 	[Num] boxµÄleftÖµ
-* @param  index [Num] boxµÄµÚ¼¸¸ö
+* è®¾ç½®åŠ è½½æ ·å¼
+* @param  box 	[obj] è®¾ç½®çš„Box
+* @param  top 	[Num] boxçš„topå€¼
+* @param  left 	[Num] boxçš„leftå€¼
+* @param  index [Num] boxçš„ç¬¬å‡ ä¸ª
 */
-var getStartNum = 0;//ÉèÖÃÇëÇó¼ÓÔØµÄÌõÊıµÄÎ»ÖÃ
+var getStartNum = 0;//è®¾ç½®è¯·æ±‚åŠ è½½çš„æ¡æ•°çš„ä½ç½®
 function getStyle(box,top,left,index){
     if (getStartNum>=index) return;
     $(box).css({
@@ -197,14 +197,14 @@ function getStyle(box,top,left,index){
     $(box).stop().animate({
         "opacity":"1"
     },999);
-    getStartNum = index;//¸üĞÂÇëÇóÊı¾İµÄÌõÊıÎ»ÖÃ
+    getStartNum = index;//æ›´æ–°è¯·æ±‚æ•°æ®çš„æ¡æ•°ä½ç½®
 }
 </script>
 
 
 </head>
 <body>
-	<!-- bannerÍ¼ -->
+	<!-- bannerå›¾ -->
 <div>
 <img src="images/300.jpg" width="100%" height="300">
 </div>
@@ -214,70 +214,70 @@ function getStyle(box,top,left,index){
 		<div class="box">
 			<div class="info">
 				<div class="pic"><img src="images/1.jpg"></div>
-				<div class="title"><a href="http://www.wolaixiuxiu.com/sou/index">¼Òµç´óÇåÏ´</a></div>
+				<div class="title"><a href="http://www.wolaixiuxiu.com/sou/index">å®¶ç”µå¤§æ¸…æ´—</a></div>
 			</div>
 		</div>
 		
 		<div class="box">
 			<div class="info">
 				<div class="pic"><img src="images/2.jpg"></div>
-				<div class="title"><a href="#">Ô´ÂëÖ®¼Ò-mycodes.net</a></div>
+				<div class="title"><a href="#">æˆ‘æ¥ä¿®ä¿®</a></div>
 			</div>
 		</div>
 		
 		<div class="box">
 			<div class="info">
 				<div class="pic"><img src="images/3.jpg"></div>
-				<div class="title"><a href="#">Ô´ÂëÖ®¼Ò-mycodes.net</a></div>
+				<div class="title"><a href="#">æˆ‘æ¥ä¿®ä¿®</a></div>
 			</div>
 		</div>
 		
 		<div class="box">
 			<div class="info">
 				<div class="pic"><img src="images/4.jpg"></div>
-				<div class="title"><a href="#">Ô´ÂëÖ®¼Ò-mycodes.net</a></div>
+				<div class="title"><a href="#">æˆ‘æ¥ä¿®ä¿®</a></div>
 			</div>
 		</div>
 	
 		<div class="box">
 			<div class="info">
 				<div class="pic"><img src="images/5.jpg"></div>
-				<div class="title"><a href="#">Ô´ÂëÖ®¼Ò-mycodes.net</a></div>
+				<div class="title"><a href="#">æˆ‘æ¥ä¿®ä¿®</a></div>
 			</div>
 		</div>
 		
 		<div class="box">
 			<div class="info">
 				<div class="pic"><img src="images/6.jpg"></div>
-				<div class="title"><a href="#">Ô´ÂëÖ®¼Ò-mycodes.net</a></div>
+				<div class="title"><a href="#">æˆ‘æ¥ä¿®ä¿®</a></div>
 			</div>
 		</div>
 		
 		<div class="box">
 			<div class="info">
 				<div class="pic"><img src="images/7.jpg"></div>
-				<div class="title"><a href="#">Ô´ÂëÖ®¼Ò-mycodes.net</a></div>
+				<div class="title"><a href="#">æˆ‘æ¥ä¿®ä¿®</a></div>
 			</div>
 		</div>
 		
 		<div class="box">
 			<div class="info">
 				<div class="pic"><img src="images/8.jpg"></div>
-				<div class="title"><a href="#">Ô´ÂëÖ®¼Ò-mycodes.net</a></div>
+				<div class="title"><a href="#">æˆ‘æ¥ä¿®ä¿®</a></div>
 			</div>
 		</div>
 		
 		<div class="box">
 			<div class="info">
 				<div class="pic"><img src="images/9.jpg"></div>
-				<div class="title"><a href="#">Ô´ÂëÖ®¼Ò-mycodes.net</a></div>
+				<div class="title"><a href="#">æˆ‘æ¥ä¿®ä¿®</a></div>
 			</div>
 		</div>
 		
 		<div class="box">
 			<div class="info">
 				<div class="pic"><img src="images/10.jpg"></div>
-				<div class="title"><a href="#">Ô´ÂëÖ®¼Ò-mycodes.net</a></div>
+				<div class="title"><a href="#">æˆ‘æ¥ä¿®ä¿®</a></div>
 			</div>
 		</div>
 	
