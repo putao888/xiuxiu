@@ -53,7 +53,9 @@ a:hover{color:#999;}
 	animation:shade 3s ease-in-out 1;
 }
 #wrap .box .info .pic img{width:420px;border-radius:3px;}
-#wrap .box .info .title{width:260px;height:40px;margin:0 auto;line-height:40px;text-align:center;color:#666;font-size:24px;font-weight:bold;overflow:hidden;}
+/*#wrap .box .info .title{width:260px;height:40px;margin:0 auto;line-height:40px;text-align:center;color:#666;font-size:24px;font-weight:bold;overflow:hidden;}*/
+#wrap .box .info .title{height:40px;margin:0 auto;line-height:40px;text-align:center;color:#666;font-size:24px;font-weight:bold;overflow:hidden;}
+
 h1{
 
 	text-align: left;
@@ -63,62 +65,62 @@ h1{
 </style>
 <script type="text/javascript" src="js/jquery.js"></script>
 <script type="text/javascript">
-window.onload = function(){
-	//运行瀑布流主函数
-	PBL('wrap','box');
-	//模拟数据
-	var data = [
-					{'src':'1.jpg','title':'1'},
-					{'src':'2.jpg','title':'我来修修'},
-					{'src':'3.jpg','title':'我来修修'},
-					{'src':'4.jpg','title':'我来修修'},
-					{'src':'5.jpg','title':'我来修修'},
-					{'src':'6.jpg','title':'我来修修'},
-					{'src':'7.jpg','title':'我来修修'},
-					{'src':'8.jpg','title':'我来修修'},
-					{'src':'9.jpg','title':'我来修修'},
-					{'src':'10.jpg','title':'我来修修'},
-					{'src':'11.jpg','title':'我来修修'},
-					{'src':'12.jpg','title':'我来修修'}
-				];
+// window.onload = function(){
+// 	//运行瀑布流主函数
+// 	PBL('wrap','box');
+// 	//模拟数据
+// 	var data = [
+// 					{'src':'1.jpg','title':'1'},
+// 					{'src':'2.jpg','title':'我来修修'},
+// 					{'src':'3.jpg','title':'我来修修'},
+// 					{'src':'4.jpg','title':'我来修修'},
+// 					{'src':'5.jpg','title':'我来修修'},
+// 					{'src':'6.jpg','title':'我来修修'},
+// 					{'src':'7.jpg','title':'我来修修'},
+// 					{'src':'8.jpg','title':'我来修修'},
+// 					{'src':'9.jpg','title':'我来修修'},
+// 					{'src':'10.jpg','title':'我来修修'},
+// 					{'src':'11.jpg','title':'我来修修'},
+// 					{'src':'12.jpg','title':'我来修修'}
+// 				];
 	
 	
-	//设置滚动加载
-	window.onscroll = function(){
-		//校验数据请求
-		if(getCheck()){
-			var wrap = document.getElementById('wrap');
-			for(i in data){
-				//创建box
-				var box = document.createElement('div');
-				box.className = 'box';
-				wrap.appendChild(box);
-				//创建info
-				var info = document.createElement('div');
-				info.className = 'info';
-				box.appendChild(info);
-				//创建pic
-				var pic = document.createElement('div');
-				pic.className = 'pic';
-				info.appendChild(pic);
-				//创建img
-				var img = document.createElement('img');
-				img.src = 'images/'+data[i].src;
-				img.style.height = 'auto';
-				pic.appendChild(img);
-				//创建title
-				var title = document.createElement('div');
-				title.className = 'title';
-				info.appendChild(title);
-				//创建a标记
-				var a = document.createElement('a');
-				a.innerHTML = data[i].title;
-				title.appendChild(a);
-			}
-			PBL('wrap','box');
-		}
-	}
-}
+// 	//设置滚动加载
+// 	window.onscroll = function(){
+// 		//校验数据请求
+// 		if(getCheck()){
+// 			var wrap = document.getElementById('wrap');
+// 			for(i in data){
+// 				//创建box
+// 				var box = document.createElement('div');
+// 				box.className = 'box';
+// 				wrap.appendChild(box);
+// 				//创建info
+// 				var info = document.createElement('div');
+// 				info.className = 'info';
+// 				box.appendChild(info);
+// 				//创建pic
+// 				var pic = document.createElement('div');
+// 				pic.className = 'pic';
+// 				info.appendChild(pic);
+// 				//创建img
+// 				var img = document.createElement('img');
+// 				img.src = 'images/'+data[i].src;
+// 				img.style.height = 'auto';
+// 				pic.appendChild(img);
+// 				//创建title
+// 				var title = document.createElement('div');
+// 				title.className = 'title';
+// 				info.appendChild(title);
+// 				//创建a标记
+// 				var a = document.createElement('a');
+// 				a.innerHTML = data[i].title;
+// 				title.appendChild(a);
+// 			}
+// 			PBL('wrap','box');
+// 		}
+// 	}
+// }
 /**
 * 瀑布流主函数
 * @param  wrap	[Str] 外层元素的ID
@@ -208,7 +210,16 @@ function getStyle(box,top,left,index){
     getStartNum = index;//更新请求数据的条数位置
 }
 </script>
-
+<!-- baidutongji -->
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?0151d1725efd0d0d95a3fc56b32c7311";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
 
 </head>
 <body>
@@ -219,44 +230,45 @@ function getStyle(box,top,left,index){
 
 	<div id="wrap">
 	
-		<div class="box">
+		<div class="box" onclick="_hmt.push(['_trackEvent', '我来修修油烟机', '点击', '别让厨房油烟堵住您的健康']);">
 			<h1>我来修修家电清洗</h1>
 			<div class="info">
 				<div class="pic"><a href="http://www.wolaixiuxiu.com/sou/index"><img src="images/1.jpg"></a></div>
-				<div class="title"><a href="http://www.wolaixiuxiu.com/sou/index">油烟机清洗钜惠</a></div>
+				<div class="title"><a href="http://www.wolaixiuxiu.com/sou/index">别让厨房油烟堵住您的健康</a></div>
 			</div>
+			
 		</div>
 		
-		<div class="box">
+		<div class="box" onclick="_hmt.push(['_trackEvent', '我来修修空调', '点击', '空调打包洗，细菌不存留']);">
 			<h1>&nbsp;</h1>
 			<div class="info">
 				<div class="pic"><img src="images/2.jpg"></div>
-				<div class="title"><a href="#">空调清洗套餐</a></div>
+				<div class="title"><a href="#">空调打包洗，细菌不存留</a></div>
 			</div>
 		</div>
 		
-		<div class="box">
-			<h1>广告招商中</h1>
+		<div class="box" onclick="_hmt.push(['_trackEvent', '叮当快药', '点击', '叮当一下，快乐到家']);">
+			<h1>生活优惠</h1>
 			<div class="info">
-				<div class="pic"><img src="images/3.png"></div>
-				<div class="title"><a href="#">我来修修</a></div>
+				<div class="pic"><a href="http://m.ddky.com/huodong/yygmore/index.html?activityId=1769&channel=8m_jxl_wlxx"><img src="images/dingdang.jpeg"></div>
+				<div class="title"><a href="http://m.ddky.com/huodong/yygmore/index.html?activityId=1769&channel=8m_jxl_wlxx">叮当一下，快乐到家</a></div>
 
 			</div>
 		</div>
 		
-		<div class="box">
+		<div class="box" onclick="_hmt.push(['_trackEvent', '肌遇', '点击', '24H智能体验店']);">
 			<h1>&nbsp;</h1>
 			<div class="info">
-				<div class="pic"><img src="images/4.png"></div>
-				<div class="title"><a href="#">我来修修</a></div>
+				<div class="pic"><a href="https://t.dianping.com/deal/31083236"><img src="images/肌遇.jpeg"></div>
+				<div class="title"><a href="https://t.dianping.com/deal/31083236">肌遇24H智能体验店 不容错过</a></div>
 			</div>
 		</div>
 	
-		<div class="box">
+		<div class="box" onclick="_hmt.push(['_trackEvent', '移动公证', '点击', '注册即可领取价值50元体验礼包']);">
 			
 			<div class="info">
-				<div class="pic"><img src="images/5.jpg"></div>
-				<div class="title"><a href="#">我来修修</a></div>
+				<div class="pic"><a href="https://4009991000.com/giftsReg/xiuxiuRegister.jsp"><img src="images/ydgz.jpeg"></div>
+				<div class="title"><a href="https://4009991000.com/giftsReg/xiuxiuRegister.jsp">注册即可领取价值50元体验礼包</a></div>
 			</div>
 		</div>
 		
@@ -311,7 +323,11 @@ function getStyle(box,top,left,index){
 				<div class="title"><a href="#">我来修修</a></div>
 			</div>
 		</div>
-	
 	</div>
+		<div style="clear:both"></div>
+	<footer>
+ 
+  <p style="color: white;font-size: 24px;text-align: center;">更多优惠内容，敬请期待</p>
+</footer>
 </body>
 </html>
