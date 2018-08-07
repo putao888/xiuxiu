@@ -60,67 +60,67 @@ h1{
 
 	text-align: left;
 	color: white;
-}
+
 
 </style>
 <script type="text/javascript" src="js/jquery.js"></script>
 <script type="text/javascript">
-// window.onload = function(){
-// 	//运行瀑布流主函数
-// 	PBL('wrap','box');
-// 	//模拟数据
-// 	var data = [
-// 					{'src':'1.jpg','title':'1'},
-// 					{'src':'2.jpg','title':'我来修修'},
-// 					{'src':'3.jpg','title':'我来修修'},
-// 					{'src':'4.jpg','title':'我来修修'},
-// 					{'src':'5.jpg','title':'我来修修'},
-// 					{'src':'6.jpg','title':'我来修修'},
-// 					{'src':'7.jpg','title':'我来修修'},
-// 					{'src':'8.jpg','title':'我来修修'},
-// 					{'src':'9.jpg','title':'我来修修'},
-// 					{'src':'10.jpg','title':'我来修修'},
-// 					{'src':'11.jpg','title':'我来修修'},
-// 					{'src':'12.jpg','title':'我来修修'}
-// 				];
+window.onload = function(){
+	//运行瀑布流主函数
+	PBL('wrap','box');
+	//模拟数据
+	var data = [
+					{'src':'1.jpg','title':'1'},
+					{'src':'2.jpg','title':'我来修修'},
+					{'src':'3.jpg','title':'我来修修'},
+					{'src':'4.jpg','title':'我来修修'},
+					{'src':'5.jpg','title':'我来修修'},
+					{'src':'6.jpg','title':'我来修修'},
+					{'src':'7.jpg','title':'我来修修'},
+					{'src':'8.jpg','title':'我来修修'},
+					{'src':'9.jpg','title':'我来修修'},
+					{'src':'10.jpg','title':'我来修修'},
+					{'src':'11.jpg','title':'我来修修'},
+					{'src':'12.jpg','title':'我来修修'}
+				];
 	
 	
-// 	//设置滚动加载
-// 	window.onscroll = function(){
-// 		//校验数据请求
-// 		if(getCheck()){
-// 			var wrap = document.getElementById('wrap');
-// 			for(i in data){
-// 				//创建box
-// 				var box = document.createElement('div');
-// 				box.className = 'box';
-// 				wrap.appendChild(box);
-// 				//创建info
-// 				var info = document.createElement('div');
-// 				info.className = 'info';
-// 				box.appendChild(info);
-// 				//创建pic
-// 				var pic = document.createElement('div');
-// 				pic.className = 'pic';
-// 				info.appendChild(pic);
-// 				//创建img
-// 				var img = document.createElement('img');
-// 				img.src = 'images/'+data[i].src;
-// 				img.style.height = 'auto';
-// 				pic.appendChild(img);
-// 				//创建title
-// 				var title = document.createElement('div');
-// 				title.className = 'title';
-// 				info.appendChild(title);
-// 				//创建a标记
-// 				var a = document.createElement('a');
-// 				a.innerHTML = data[i].title;
-// 				title.appendChild(a);
-// 			}
-// 			PBL('wrap','box');
-// 		}
-// 	}
-// }
+	//设置滚动加载
+	// window.onscroll = function(){
+	// 	//校验数据请求
+	// 	if(getCheck()){
+	// 		var wrap = document.getElementById('wrap');
+	// 		for(i in data){
+	// 			//创建box
+	// 			var box = document.createElement('div');
+	// 			box.className = 'box';
+	// 			wrap.appendChild(box);
+	// 			//创建info
+	// 			var info = document.createElement('div');
+	// 			info.className = 'info';
+	// 			box.appendChild(info);
+	// 			//创建pic
+	// 			var pic = document.createElement('div');
+	// 			pic.className = 'pic';
+	// 			info.appendChild(pic);
+	// 			//创建img
+	// 			var img = document.createElement('img');
+	// 			img.src = 'images/'+data[i].src;
+	// 			img.style.height = 'auto';
+	// 			pic.appendChild(img);
+	// 			//创建title
+	// 			var title = document.createElement('div');
+	// 			title.className = 'title';
+	// 			info.appendChild(title);
+	// 			//创建a标记
+	// 			var a = document.createElement('a');
+	// 			a.innerHTML = data[i].title;
+	// 			title.appendChild(a);
+	// 		}
+	// 		PBL('wrap','box');
+	// 	}
+	// }
+}
 /**
 * 瀑布流主函数
 * @param  wrap	[Str] 外层元素的ID
@@ -210,7 +210,7 @@ function getStyle(box,top,left,index){
     getStartNum = index;//更新请求数据的条数位置
 }
 </script>
-<!-- baidutongji -->
+<!-- 百度统计 -->
 <script>
 var _hmt = _hmt || [];
 (function() {
@@ -224,110 +224,131 @@ var _hmt = _hmt || [];
 </head>
 <body>
 	<!-- banner图 -->
-<div>
-<img src="images/300.jpg" width="100%" height="450">
-</div>
+<div><img src="images/300.jpg" width="100%" height="450"></div>
 
 	<div id="wrap">
-	
-		<div class="box" onclick="_hmt.push(['_trackEvent', '我来修修油烟机', '点击', '别让厨房油烟堵住您的健康']);">
+			<div class="box" onclick="_hmt.push(['_trackEvent', '我来修修空调', '点击', '空调打包洗，细菌不存留']);">
 			<h1>我来修修家电清洗</h1>
 			<div class="info">
-				<div class="pic"><a href="http://www.wolaixiuxiu.com/sou/index"><img src="images/1.jpg"></a></div>
-				<div class="title"><a href="http://www.wolaixiuxiu.com/sou/index">别让厨房油烟堵住您的健康</a></div>
-			</div>
-			
-		</div>
-		
-		<div class="box" onclick="_hmt.push(['_trackEvent', '我来修修空调', '点击', '空调打包洗，细菌不存留']);">
-			<h1>&nbsp;</h1>
-			<div class="info">
-				<div class="pic"><img src="images/2.jpg"></div>
-				<div class="title"><a href="#">空调打包洗，细菌不存留</a></div>
+				<div class="pic"><a href="http://test.wolaixiuxiu.com/company/createclean?&type=2120&orders_type=2119,2120,2131&types=2119&three=2131"><img src="images/2.jpg"></div>
+				<div class="title"><a href="http://test.wolaixiuxiu.com/company/createclean?&type=2120&orders_type=2119,2120,2131&types=2119&three=2131">空调打包洗，细菌不存留</a></div>
 			</div>
 		</div>
-		
-		<div class="box" onclick="_hmt.push(['_trackEvent', '叮当快药', '点击', '叮当一下，快乐到家']);">
-			<h1>生活优惠</h1>
-			<div class="info">
-				<div class="pic"><a href="http://m.ddky.com/huodong/yygmore/index.html?activityId=1769&channel=8m_jxl_wlxx"><img src="images/dingdang.jpeg"></div>
-				<div class="title"><a href="http://m.ddky.com/huodong/yygmore/index.html?activityId=1769&channel=8m_jxl_wlxx">叮当一下，快乐到家</a></div>
 
+
+
+		<div class="box" onclick="_hmt.push(['_trackEvent', '我来修修油烟机', '点击', '别让厨房油烟堵住您的健康']);">
+			<h1>&nbsp;</h1>
+			<div class="info">
+				<div class="pic"><a href="http://test.wolaixiuxiu.com/company/createclean?&type=2137&orders_type=2119,2137,2138&types=2119&three=2138"><img src="images/1.jpg"></a></div>
+				<div class="title"><a href="http://test.wolaixiuxiu.com/company/createclean?&type=2137&orders_type=2119,2137,2138&types=2119&three=2138">别让厨房油烟堵住您的健康</a></div>
 			</div>
 		</div>
 		
-		<div class="box" onclick="_hmt.push(['_trackEvent', '肌遇', '点击', '24H智能体验店']);">
-			<h1>&nbsp;</h1>
-			<div class="info">
-				<div class="pic"><a href="https://t.dianping.com/deal/31083236"><img src="images/肌遇.jpeg"></div>
-				<div class="title"><a href="https://t.dianping.com/deal/31083236">肌遇24H智能体验店 不容错过</a></div>
-			</div>
-		</div>
+		
 	
-		<div class="box" onclick="_hmt.push(['_trackEvent', '移动公证', '点击', '注册即可领取价值50元体验礼包']);">
+
+	<div class="box" onclick="_hmt.push(['_trackEvent', '叮当快药', '点击', '叮当一下，快乐到家']);">
+		<h1>生活优惠</h1>
+
+		<div class="info">
+			<div class="pic"><a href="http://m.ddky.com/huodong/yygmore/index.html?activityId=1769&channel=8m_jxl_wlxx"><img src="images/dingdang.jpeg"></div>
+			<div class="title"><a href="http://m.ddky.com/huodong/yygmore/index.html?activityId=1769&channel=8m_jxl_wlxx">叮当一下，快乐到家</a></div>
+
+		</div>
+	</div>
+	<div class="box" onclick="_hmt.push(['_trackEvent', '易到用车', '点击', '易到用车文案']);">
+		<h1>&nbsp;</h1>
+		<div class="info">
+			<div class="pic"><a href="https://t.dianping.com/deal/31083236"><img src="images/551.jpg"></div>
+			<div class="title"><a href="https://t.dianping.com/deal/31083236">易到用车</a></div>
+		</div>
+	</div>
+
+	<div class="box" onclick="_hmt.push(['_trackEvent', '货拉拉', '点击', '货拉拉无门槛优惠券最高减10元']);">
+		
+		<div class="info">
+			<div class="pic"><a href="https://act.huolala.cn/?_m=act_city&city=2Zt6hpf"><img src="images/huolala.jpg"></div>
+			<div class="title"><a href="https://act.huolala.cn/?_m=act_city&city=2Zt6hpf">货拉拉无门槛优惠券最高减10元</a></div>
+		</div>
+	</div>
+
+	<div class="box" onclick="_hmt.push(['_trackEvent', '爱回收', '点击', '领券回收，可加价666元']);">
+		
+		<div class="info">
+			<div class="pic"><a href="https://activity.aihuishou.com/activity-m/index.html?id=5b68f7ecdf46c60010c6356d&utm_source=xqd_hl&utm_medium=wolaixiuxiu&utm_campaign=cmslink"><img src="images/aihuishou.jpeg"></div>
+			<div class="title"><a href="https://activity.aihuishou.com/activity-m/index.html?id=5b68f7ecdf46c60010c6356d&utm_source=xqd_hl&utm_medium=wolaixiuxiu&utm_campaign=cmslink">领券回收，可加价666元</a></div>
+		</div>
+	</div>
+
+	<!-- 极客修 -->
+	<div class="box" onclick="_hmt.push(['_trackEvent', '极客修', '点击', '值得信赖的手机快修平台']);">
+		
+		<div class="info">
+			<div class="pic"><a href="https://www.jikexiu.com/zt/common/lyy/index?orderSource=503&hmsr=ly_pyq&hmpl=&hmcu=&hmkw=&hmci="><img src="images/jikexiu.jpg"></div>
+			<div class="title"><a href="https://www.jikexiu.com/zt/common/lyy/index?orderSource=503&hmsr=ly_pyq&hmpl=&hmcu=&hmkw=&hmci=">值得信赖的手机快修平台</a></div>
+		</div>
+	</div>
+<!-- 移动公证 -->
+	<div class="box" onclick="_hmt.push(['_trackEvent', '移动公证', '点击', '注册即可领取价值50元体验礼包']);">
 			
 			<div class="info">
 				<div class="pic"><a href="https://4009991000.com/giftsReg/xiuxiuRegister.jsp"><img src="images/ydgz.jpeg"></div>
 				<div class="title"><a href="https://4009991000.com/giftsReg/xiuxiuRegister.jsp">注册即可领取价值50元体验礼包</a></div>
 			</div>
 		</div>
+		<!-- 肌遇 -->
+	<div class="box" onclick="_hmt.push(['_trackEvent', '肌遇', '点击', '24H智能体验店']);">
 		
-		<div class="box">
-			<div class="info">
-				<div class="pic"><img src="images/6.jpg"></div>
-				<div class="title"><a href="#">我来修修</a></div>
-			</div>
-		</div>
-		
-		<div class="box">
-			
-			<div class="info">
-				<div class="pic"><img src="images/7.jpg"></div>
-				<div class="title"><a href="#">我来修修</a></div>
-			</div>
-		</div>
-		
-		<div class="box">
-			
-			<div class="info">
-				<div class="pic"><img src="images/8.jpg"></div>
-				<div class="title"><a href="#">我来修修</a></div>
-			</div>
-		</div>
-		
-		<div class="box">
-			
-			<div class="info">
-				<div class="pic"><img src="images/9.jpg"></div>
-				<div class="title"><a href="#">我来修修</a></div>
-			</div>
-		</div>
-		
-		<div class="box">
-			<div class="info">
-				<div class="pic"><img src="images/10.jpg"></div>
-				<div class="title"><a href="#">我来修修</a></div>
-			</div>
-		</div>
-
-		<div class="box">
-			<div class="info">
-				<div class="pic"><img src="images/11.jpg"></div>
-				<div class="title"><a href="#">我来修修</a></div>
-			</div>
-		</div>
-
-		<div class="box">
-			<div class="info">
-				<div class="pic"><img src="images/12.jpg"></div>
-				<div class="title"><a href="#">我来修修</a></div>
-			</div>
+		<div class="info">
+			<div class="pic"><a href="https://t.dianping.com/deal/31083236"><img src="images/肌遇.jpeg"></div>
+			<div class="title"><a href="https://t.dianping.com/deal/31083236">肌遇24H智能体验店 不容错过</a></div>
 		</div>
 	</div>
-		<div style="clear:both"></div>
-	<footer>
- 
-  <p style="color: white;font-size: 24px;text-align: center;">更多优惠内容，敬请期待</p>
-</footer>
+	
+<!-- 芙艾医美 -->
+	<div class="box" onclick="_hmt.push(['_trackEvent', '芙艾医美', '点击', '快来领取你的免费夏日美肤福利']);">
+		
+		<div class="info">
+			<div class="pic"><a href="https://jinshuju.net/f/GDZChN"><img src="images/fuaiyiliao.jpg"></div>
+			<div class="title"><a href="https://jinshuju.net/f/GDZChN">快来领取你的免费夏日美肤福利</a></div>
+		</div>
+	</div>
+	<!-- 汪正摄影 -->
+	<div class="box" onclick="_hmt.push(['_trackEvent', '汪正摄影', '点击', '汪正影业儿童体验拍摄']);">
+		
+		<div class="info">
+			<div class="pic"><a href="https://jinshuju.net/f/nXsRmj"><img src="images/wangzhengsheying.jpeg"></div>
+			<div class="title"><a href="https://jinshuju.net/f/nXsRmj">汪正影业儿童体验拍摄</a></div>
+		</div>
+	</div>
+
+	<!-- 北京德倍尔口腔 -->
+	<div class="box" onclick="_hmt.push(['_trackEvent', '德倍尔口腔', '点击', '数字齿科技术，让你笑容灿烂']);">
+		
+		<div class="info">
+			<div class="pic"><a href="#"><img src="images/debeierkouqiang.jpeg"></div>
+			<div class="title"><a href="#">数字齿科技术，让你笑容灿烂</a></div>
+		</div>
+	</div>
+		
+		<!-- 北京德倍尔口腔 -->
+	<div class="box">
+		
+		<div style="
+    width: 915px;">
+			<div style="
+    width: 915px;"></div>
+			<div style="text-align: center; font-size: 35px; color: white!important;">更多优惠内容，敬请期待</div>
+		</div>
+	</div>
+		<div style="width: 100%; class="clear";">
+			
+
+			
+	</div>
+
+
 </body>
+
 </html>
